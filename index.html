@@ -1,20 +1,22 @@
+// FILE: index.html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digital Aura — Web & Digital Agency</title>
+  <title>Digital Aura - Web & Digital Agency</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="noise-overlay" aria-hidden="true"></div>
+
   <header class="nav" id="top">
-    <div class="nav__inner">
+    <div class="container nav__inner">
       <a class="logo" href="#top" aria-label="Digital Aura Home">Digital Aura</a>
       <nav aria-label="Primary">
         <a href="#hero">Intro</a>
-        <a href="#story">Story</a>
         <a href="#services">Services</a>
+        <a href="#story">Story</a>
         <a href="#work">Work</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
@@ -24,51 +26,184 @@
   </header>
 
   <main>
-    <section class="hero-scrolly" id="hero">
-      <div class="hero__sticky">
-        <div class="hero__stage" aria-hidden="true">
-          <div class="layer layer-grid"></div>
-          <div class="layer layer-noise"></div>
-          <div class="layer layer-lines"></div>
-          <div class="layer layer-shape layer-shape-a"></div>
-          <div class="layer layer-shape layer-shape-b"></div>
-          <div class="layer layer-card layer-card-a">
-            <div class="card-frame"></div>
+    <section class="hero hero-scroll" id="hero">
+      <div class="hero-sticky">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Web / Digital Agency</p>
+            <h1 class="hero-headline" aria-live="polite">
+              <span class="hero-phrase hero-phrase--current">We build digital products that feel inevitable.</span>
+              <span class="hero-phrase hero-phrase--next" aria-hidden="true"></span>
+            </h1>
+            <div class="hero-rule" aria-hidden="true"></div>
+            <p class="hero-sub">Calm interfaces, cinematic motion, launch-grade engineering.</p>
+            <div class="hero-cta">
+              <a class="primary-btn" href="#contact">Book a call</a>
+              <a class="ghost-btn" href="#work">View work</a>
+            </div>
+            <div class="hero-meta">
+              <div class="hero-progress" aria-hidden="true">
+                <span class="hero-progress-fill"></span>
+              </div>
+              <p class="hero-micro" aria-live="polite">Stage 1 - Foundation</p>
+            </div>
           </div>
-          <div class="layer layer-card layer-card-b">
-            <div class="card-frame"></div>
+          <div class="hero-stage" aria-hidden="true">
+            <div class="layer layer-grid"></div>
+            <div class="layer layer-noise"></div>
+            <div class="layer layer-lines"></div>
+            <div class="layer layer-shape layer-shape-a"></div>
+            <div class="layer layer-shape layer-shape-b"></div>
+            <div class="layer layer-card layer-card-a"><div class="card-frame"></div></div>
+            <div class="layer layer-card layer-card-b"><div class="card-frame"></div></div>
+            <div class="layer layer-typo">lat 37.78 deg | lon -122.4 deg | signal / clarity</div>
+            <div class="layer layer-sweep"></div>
+            <div class="layer layer-focus"></div>
+            <div class="layer layer-particles"></div>
           </div>
-          <div class="layer layer-typo">lat 37.78° · lon -122.4° · signal / clarity</div>
-          <div class="layer layer-sweep"></div>
-          <div class="layer layer-focus"></div>
-          <div class="layer layer-particles"></div>
         </div>
-        <div class="hero__content">
-          <p class="eyebrow">Web / Digital Agency</p>
-          <h1 class="hero__headline" aria-live="polite">
-            <span class="hero__phrase hero__phrase--current">We build digital products that feel inevitable.</span>
-            <span class="hero__phrase hero__phrase--next" aria-hidden="true"></span>
-          </h1>
-          <p class="hero__sub">Calm interfaces, cinematic motion, launch-grade engineering.</p>
-          <div class="hero__cta">
-            <a class="primary-btn" href="#contact">Book a call</a>
-            <div class="scroll-hint" aria-hidden="true">
-              <span class="scroll-line"></span>
-              <span class="scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Built for outcomes</h2>
+          <p class="lede">Strategy, design, engineering, and growth delivered as cohesive systems.</p>
+        </div>
+
+        <div class="services-pillars">
+          <article class="service-card reveal" style="--delay:0ms">
+            <div class="service-tag">Strategy</div>
+            <h3>Social Media Management</h3>
+            <p>Organic + paid presence orchestrated with a single voice and measurable growth.</p>
+            <ul>
+              <li>Audit + strategy</li>
+              <li>Content plan mensile</li>
+              <li>Copywriting + visual system</li>
+              <li>Publishing + community management</li>
+              <li>Report KPI + iterazioni</li>
+              <li>ADV support (opzionale)</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" style="--delay:80ms">
+            <div class="service-tag">Identity</div>
+            <h3>Brand Identity</h3>
+            <p>Systems that align logo, tone, and visuals into a coherent, scalable brand.</p>
+            <ul>
+              <li>Logo suite + usage rules</li>
+              <li>Palette + typography system</li>
+              <li>Brand voice + tone</li>
+              <li>Social templates</li>
+              <li>Mini brand book (PDF)</li>
+              <li>Art direction</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" style="--delay:160ms">
+            <div class="service-tag">Automation</div>
+            <h3>Software &amp; Gestionali</h3>
+            <p>Custom web apps and dashboards with integrations and observability built-in.</p>
+            <ul>
+              <li>Web app su misura</li>
+              <li>Dashboard e pannelli admin</li>
+              <li>Integrazioni API (pagamenti, CRM, email)</li>
+              <li>Automazioni (workflow)</li>
+              <li>Ruoli/permessi + auth</li>
+              <li>Manutenzione e miglioramenti</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" style="--delay:240ms">
+            <div class="service-tag">Performance</div>
+            <h3>Siti Web &amp; Landing</h3>
+            <p>Conversion-first websites: fast, accessible, SEO-ready, with analytics baked in.</p>
+            <ul>
+              <li>UX/UI + prototipo</li>
+              <li>Sviluppo performante</li>
+              <li>CMS (se serve) o statico</li>
+              <li>Tracking + analytics</li>
+              <li>Hosting + deploy</li>
+              <li>A/B test base</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="services-packs">
+          <div class="packs-head">
+            <div>
+              <p class="eyebrow">Packs</p>
+              <h3>Choose the right pace</h3>
             </div>
+            <p class="packs-note">Prezzi su richiesta. Ogni pacchetto include un project lead dedicato e retrospettive bisettimanali.</p>
           </div>
-          <div class="hero__meta">
-            <div class="hero__progress" aria-hidden="true">
-              <span class="hero__progress-fill"></span>
-            </div>
-            <p class="hero__micro" aria-live="polite">Stage 1 — Foundation</p>
+          <div class="packs-grid">
+            <article class="pack-card reveal" style="--delay:0ms">
+              <div class="pack-top">
+                <h4>Starter</h4>
+                <p class="price">da 4.5k€</p>
+              </div>
+              <ul>
+                <li>1 landing o minisito</li>
+                <li>Brand starter kit</li>
+                <li>Content plan 1 mese</li>
+                <li>Setup tracking + analytics</li>
+                <li>1 iterazione post-launch</li>
+              </ul>
+              <a class="primary-btn" href="#contact">Richiedi preventivo</a>
+            </article>
+
+            <article class="pack-card reveal" style="--delay:80ms">
+              <div class="pack-top">
+                <h4>Growth</h4>
+                <p class="price">su richiesta</p>
+              </div>
+              <ul>
+                <li>Website 4–6 pagine</li>
+                <li>Design system light</li>
+                <li>Content + SMM 2 mesi</li>
+                <li>Automazioni base (lead/CRM)</li>
+                <li>QA + performance budget</li>
+                <li>2 A/B test iniziali</li>
+              </ul>
+              <a class="primary-btn" href="#contact">Richiedi preventivo</a>
+            </article>
+
+            <article class="pack-card reveal" style="--delay:160ms">
+              <div class="pack-top">
+                <h4>Enterprise</h4>
+                <p class="price">su richiesta</p>
+              </div>
+              <ul>
+                <li>Web app / dashboard custom</li>
+                <li>Design system completo</li>
+                <li>API + automazioni avanzate</li>
+                <li>Content + SMM 3 mesi</li>
+                <li>Observability + SLO</li>
+                <li>Roadmap trimestrale + ops</li>
+              </ul>
+              <a class="primary-btn" href="#contact">Richiedi preventivo</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="services-process">
+          <p class="eyebrow">Process</p>
+          <div class="process-mini">
+            <div class="process-mini__step is-active">Discover</div>
+            <div class="process-mini__step">Design</div>
+            <div class="process-mini__step">Build</div>
+            <div class="process-mini__step">Launch</div>
+            <div class="process-mini__step">Improve</div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="story section" id="story" aria-labelledby="story-title">
-      <div class="story__inner">
+      <div class="container story__inner">
         <div class="story__text">
           <p class="eyebrow">Method</p>
           <h2 id="story-title">Clarity in motion</h2>
@@ -93,108 +228,87 @@
       </div>
     </section>
 
-    <section class="services section" id="services" aria-labelledby="services-title">
-      <div class="section__heading">
-        <p class="eyebrow">Services</p>
-        <h2 id="services-title">What we craft</h2>
-      </div>
-      <div class="services__grid">
-        <article class="card reveal" style="--delay:0ms">
-          <h3>Product Strategy</h3>
-          <p>From hypothesis to validated roadmap with measurable outcomes.</p>
-        </article>
-        <article class="card reveal" style="--delay:80ms">
-          <h3>Experience Design</h3>
-          <p>Interfaces with intent, accessibility-first, motion for clarity.</p>
-        </article>
-        <article class="card reveal" style="--delay:160ms">
-          <h3>Engineering</h3>
-          <p>Performance budgets, semantic HTML, composable architectures.</p>
-        </article>
-        <article class="card reveal" style="--delay:240ms">
-          <h3>Content & Growth</h3>
-          <p>Conversion-focused narratives, SEO foundations, analytics loops.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="work section" id="work" aria-labelledby="work-title">
-      <div class="section__heading">
-        <p class="eyebrow">Selected</p>
-        <h2 id="work-title">Case studies</h2>
-      </div>
-      <div class="work__grid">
-        <article class="work__item reveal" style="--delay:0ms">
-          <div class="work__poster" data-depth="0.15">
-            <div class="poster-noise"></div>
-          </div>
-          <div class="work__meta">
-            <h3>Atlas OS</h3>
-            <p>Redefined onboarding with motion cues and async data sync.</p>
-          </div>
-        </article>
-        <article class="work__item reveal" style="--delay:80ms">
-          <div class="work__poster" data-depth="0.25">
-            <div class="poster-noise"></div>
-          </div>
-          <div class="work__meta">
-            <h3>Northwind</h3>
-            <p>Design system rollout with performance guardrails.</p>
-          </div>
-        </article>
-        <article class="work__item reveal" style="--delay:160ms">
-          <div class="work__poster" data-depth="0.35">
-            <div class="poster-noise"></div>
-          </div>
-          <div class="work__meta">
-            <h3>SignalX</h3>
-            <p>Analytics surface with parallax storytelling for clarity.</p>
-          </div>
-        </article>
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Selected</p>
+          <h2 id="work-title">Case studies</h2>
+        </div>
+        <div class="work__grid">
+          <article class="work__item reveal" style="--delay:0ms">
+            <div class="work__poster" data-depth="0.15">
+              <div class="poster-noise"></div>
+            </div>
+            <div class="work__meta">
+              <h3>Atlas OS</h3>
+              <p>Redefined onboarding with motion cues and async data sync.</p>
+            </div>
+          </article>
+          <article class="work__item reveal" style="--delay:80ms">
+            <div class="work__poster" data-depth="0.25">
+              <div class="poster-noise"></div>
+            </div>
+            <div class="work__meta">
+              <h3>Northwind</h3>
+              <p>Design system rollout with performance guardrails.</p>
+            </div>
+          </article>
+          <article class="work__item reveal" style="--delay:160ms">
+            <div class="work__poster" data-depth="0.35">
+              <div class="poster-noise"></div>
+            </div>
+            <div class="work__meta">
+              <h3>SignalX</h3>
+              <p>Analytics surface with parallax storytelling for clarity.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="process section" id="process" aria-labelledby="process-title">
-      <div class="section__heading">
-        <p class="eyebrow">Process</p>
-        <h2 id="process-title">How we deliver</h2>
-      </div>
-      <div class="process__timeline">
-        <div class="process__line" aria-hidden="true"></div>
-        <div class="process__steps">
-          <div class="process__step reveal is-active" style="--delay:0ms">
-            <span class="step__dot" aria-hidden="true"></span>
-            <div>
-              <h3>01 / Discover</h3>
-              <p>Stakeholder mapping, success metrics, constraints.</p>
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Process</p>
+          <h2 id="process-title">How we deliver</h2>
+        </div>
+        <div class="process__timeline">
+          <div class="process__line" aria-hidden="true"></div>
+          <div class="process__steps">
+            <div class="process__step reveal is-active" style="--delay:0ms">
+              <span class="step__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Discover</h3>
+                <p>Stakeholder mapping, goals, constraints, success metrics.</p>
+              </div>
             </div>
-          </div>
-          <div class="process__step reveal" style="--delay:80ms">
-            <span class="step__dot" aria-hidden="true"></span>
-            <div>
-              <h3>02 / Design</h3>
-              <p>Flows, prototypes, accessibility reviews, motion intent.</p>
+            <div class="process__step reveal" style="--delay:80ms">
+              <span class="step__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Design</h3>
+                <p>Flows, prototypes, accessibility reviews, motion intent.</p>
+              </div>
             </div>
-          </div>
-          <div class="process__step reveal" style="--delay:160ms">
-            <span class="step__dot" aria-hidden="true"></span>
-            <div>
-              <h3>03 / Build</h3>
-              <p>Atomic components, performance budgets, QA.</p>
+            <div class="process__step reveal" style="--delay:160ms">
+              <span class="step__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Build</h3>
+                <p>Components, performance budgets, integrations, QA.</p>
+              </div>
             </div>
-          </div>
-          <div class="process__step reveal" style="--delay:240ms">
-            <span class="step__dot" aria-hidden="true"></span>
-            <div>
-              <h3>04 / Launch</h3>
-              <p>Observability, polish, rollout playbooks.</p>
+            <div class="process__step reveal" style="--delay:240ms">
+              <span class="step__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Launch</h3>
+                <p>Observability, rollout playbooks, analytics dashboards.</p>
+              </div>
             </div>
-          </div>
-          <div class="process__step reveal" style="--delay:320ms">
-            <span class="step__dot" aria-hidden="true"></span>
-            <div>
-              <h3>05 / Iterate</h3>
-              <p>Signals, experiments, continuous refinement.</p>
+            <div class="process__step reveal" style="--delay:320ms">
+              <span class="step__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Improve</h3>
+                <p>Signals, experiments, continuous refinement.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -202,30 +316,32 @@
     </section>
 
     <section class="contact section" id="contact" aria-labelledby="contact-title">
-      <div class="section__heading">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's build</h2>
-        <p class="contact__lede">Tell us about your product. We'll reply within one business day.</p>
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's build</h2>
+          <p class="contact__lede">Tell us about your product. We'll reply within one business day.</p>
+        </div>
+        <form class="contact__form">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Project
+            <textarea name="project" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="primary-btn">Send</button>
+        </form>
+        <footer class="footer">
+          <p>Digital Aura - San Francisco / Remote</p>
+          <p><a href="mailto:hello@digital-aura.studio">hello@digital-aura.studio</a></p>
+        </footer>
       </div>
-      <form class="contact__form">
-        <label>
-          Name
-          <input type="text" name="name" autocomplete="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" autocomplete="email" required>
-        </label>
-        <label>
-          Project
-          <textarea name="project" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="primary-btn">Send</button>
-      </form>
-      <footer class="footer">
-        <p>Digital Aura — San Francisco / Remote</p>
-        <p><a href="mailto:hello@digital-aura.studio">hello@digital-aura.studio</a></p>
-      </footer>
     </section>
   </main>
 
