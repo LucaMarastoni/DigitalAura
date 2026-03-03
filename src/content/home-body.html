@@ -1,0 +1,312 @@
+    <canvas id="stars-bg" aria-hidden="true"></canvas>
+    <div class="page-wrapper">
+      <header class="header">
+        <nav class="nav" aria-label="Navigazione principale">
+          <a class="brand" href="#intro">Luca Marastoni<span>Digital Solution</span></a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Apri menù"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <!-- Nav order updated -->
+          <ul class="nav-links" id="primary-navigation">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#services">Servizi</a></li>
+            <li><a href="#process">Metodo</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <section id="intro" class="hero hero-centered section">
+          <div class="hero-content reveal">
+            <h1 class="hero-title">
+              <span class="hero-title-main">
+                <span
+                  class="swap-word"
+                  data-rotate='["WEB","DIGITAL","CRM","ADS","GROWTH"]'
+                  data-interval="1500"
+                >WEB</span>
+                <span class="static-word">AGENCY</span>
+              </span>
+            </h1>
+            <!-- Hero metodo -->
+            <p class="hero-method">Strategia &middot; Design &middot; Sviluppo &middot; Automazione &middot; Google Ads</p>
+            <!-- Hero CTA -->
+            <div class="hero-cta">
+              <a class="btn primary" href="#contact" aria-label="Vai alla sezione contatti">Iniziamo oggi</a>
+              <a class="btn outline btn-glass" href="#progetti">Scopri i progetti</a>
+            </div>
+            <button class="scroll-indicator" type="button" aria-label="Scorri verso il basso" data-scroll-target="#services">
+              <span class="scroll-indicator-mouse" aria-hidden="true">
+                <span class="scroll-indicator-wheel"></span>
+              </span>
+              <span class="scroll-indicator-chevron" aria-hidden="true"></span>
+            </button>
+            <div id="hero-scroll-reveal-root" class="hero-scroll-reveal-slot"></div>
+          </div>
+        </section>
+
+        <!-- Nuova sezione: Servizi -->
+        <section id="services" class="section section-alt services-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Servizi</p>
+            <h2 class="headline-animated">Cosa possiamo costruire per te</h2>
+            <p class="services-intro">Soluzioni su misura per prodotto digitale, operatività interna e acquisizione clienti.</p>
+          </div>
+          <div class="services-grid services-grid--simple">
+            <article class="service-simple-card reveal">
+              <div class="service-simple-details">
+                <p class="service-simple-title">Siti e landing orientati al contatto</p>
+                <p class="service-simple-lead">Sviluppo pagine chiare e orientate alla conversione.</p>
+                <ul class="service-simple-points" aria-label="Dettagli servizio siti e landing">
+                  <li><strong>Performance e SEO tecnica:</strong> base solida per visibilita e caricamenti rapidi.</li>
+                  <li><strong>Struttura persuasiva:</strong> sezioni progettate per guidare la richiesta di contatto.</li>
+                  <li><strong>Tracking eventi:</strong> dati puliti per capire cosa converte davvero.</li>
+                </ul>
+              </div>
+              <a class="service-simple-button" href="#project-albatros" aria-label="Vedi case study siti e landing">Apri caso</a>
+            </article>
+
+            <article class="service-simple-card service-simple-card--ads reveal">
+              <div class="service-simple-details">
+                <div class="google-badge" aria-label="Google Ads Certified" role="img">
+                  <img
+                    src="./image/google-search-certified.png"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="service-simple-title">Google Ads con focus sui lead utili</p>
+                <p class="service-simple-lead">Impostiamo campagne Search e Local con obiettivi chiari.</p>
+                <ul class="service-simple-points" aria-label="Dettagli servizio Google Ads">
+                  <li><strong>Keyword e annunci:</strong> targeting allineato al servizio e alle intenzioni reali.</li>
+                  <li><strong>Misurazione affidabile:</strong> conversioni tracciate e report leggibili.</li>
+                  <li><strong>Ottimizzazione continua:</strong> budget gestito su cio che porta lead pertinenti.</li>
+                </ul>
+              </div>
+              <a class="service-simple-button" href="#project-pizzaparty" aria-label="Vedi case study Google Ads">Apri caso</a>
+            </article>
+
+            <article class="service-simple-card reveal">
+              <div class="service-simple-details">
+                <p class="service-simple-title">CRM su misura per processi reali</p>
+                <p class="service-simple-lead">Creiamo CRM custom su misura del tuo flusso operativo.</p>
+                <ul class="service-simple-points" aria-label="Dettagli servizio CRM">
+                  <li><strong>Pipeline e task:</strong> gestione commerciale in un unico pannello.</li>
+                  <li><strong>Automazioni utili:</strong> meno lavoro manuale e follow-up piu coerenti.</li>
+                  <li><strong>Dashboard operative:</strong> controllo rapido di stato, priorita e prossime azioni.</li>
+                </ul>
+              </div>
+              <a class="service-simple-button" href="#project-piuma" aria-label="Vedi case study CRM">Apri caso</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Sezione Metodo aggiornata -->
+        <section id="process" class="section section-alt">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Metodo</p>
+            <h2 class="headline-animated">Come lavoriamo</h2>
+            <p class="process-intro">Un flusso in sei step chiari, dalla strategia al go-live, con ottimizzazione continua basata sui dati.</p>
+          </div>
+          <div id="process-scroll-triggered-root" class="process-scroll-triggered-slot"></div>
+        </section>
+
+        <section id="progetti" class="projects-host">
+          <div id="projects-section-root" class="projects-section-slot"></div>
+        </section>
+
+        <section id="contact" class="section">
+          <div id="contact-section-root" class="contact-section-slot"></div>
+        </section>
+
+        <!-- Collaborazioni statiche: loghi -->
+        <section class="section collab-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Hanno lavorato con noi</p>
+            <p class="collab-intro">Progetti reali, non loghi messi in vetrina.</p>
+          </div>
+          <div class="clients-grid">
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/311_logo.png"
+                alt="Logo 311 Verona"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/enaip_logo.png"
+                alt="Logo ENAIP"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/37100club_logo.jpeg"
+                alt="Logo 37100 Club"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/pizzaparty_logo.png"
+                alt="Logo Pizza Party"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/albatros_logo.png"
+                alt="Logo Albatros Noleggio"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/miclab_logo.jpg"
+                alt="Logo MICLAB"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo client-logo-terra"
+                src="./logos/terrasushi_logo.png"
+                alt="Logo Terra Sushi"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/martylab_logo.jpg"
+                alt="Logo Martylab"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client">
+              <img
+                class="client-logo"
+                src="./logos/lorisimpianti.png"
+                alt="Logo Loris Impianti"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="client client-vaulted">
+              <img
+                class="client-logo"
+                src="./logos/vaulted_logo.png"
+                alt="Logo Vaulted"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p>© <span id="year"></span> Luca Marastoni Digital Solution. Tutti i diritti riservati.</p>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.linkedin.com/in/luca-marastoni-387329304/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/marastoni.luca/" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lucamarastoni" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <button class="footer-link modal-trigger" type="button" data-modal-target="#privacy-modal">
+                Privacy Policy
+              </button>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-backdrop" id="privacy-modal" aria-hidden="true">
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="privacy-modal-title"
+        tabindex="-1"
+      >
+        <button class="modal-close" type="button" data-dismiss-modal aria-label="Chiudi Privacy Policy">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <h2 id="privacy-modal-title">Privacy Policy</h2>
+          <!-- Privacy content updated -->
+          <p class="modal-subtitle">In breve: questo sito non ti traccia, non ti profila e non raccoglie dati automaticamente.</p>
+          <h3>Titolare del trattamento</h3>
+          <p>Il titolare del trattamento è Luca Marastoni.</p>
+          <p>Per qualsiasi richiesta relativa alla privacy puoi scrivere a: <a href="mailto:marastoni311@gmail.com">marastoni311@gmail.com</a>.</p>
+          <h3>Tipologia di sito</h3>
+          <p>Questo sito è una vetrina informativa e portfolio professionale del nostro team, realizzato per presentare progetti, competenze e contatti professionali.</p>
+          <h3>Dati personali trattati</h3>
+          <p>Questo sito non raccoglie dati personali in modo automatico.</p>
+          <p>Non sono presenti form di contatto, sistemi di tracciamento o strumenti di analisi.</p>
+          <p>L’unico dato personale eventualmente trattato è l’indirizzo email, fornito volontariamente dall’utente nel caso in cui decida di scrivere direttamente al titolare.</p>
+          <h3>Finalità del trattamento</h3>
+          <p>I dati forniti volontariamente dall’utente vengono utilizzati esclusivamente per rispondere alle richieste di contatto.</p>
+          <p>Non viene effettuata alcuna attività di marketing, profilazione o invio di comunicazioni non richieste.</p>
+          <h3>Base giuridica del trattamento</h3>
+          <p>Il trattamento dei dati si basa sul consenso dell’utente (art. 6, par. 1, lett. a del Regolamento UE 2016/679 – GDPR), espresso tramite l’invio spontaneo di una comunicazione.</p>
+          <h3>Cookie</h3>
+          <p>Questo sito non utilizza cookie di profilazione o di terze parti.</p>
+          <p>Possono essere presenti esclusivamente cookie tecnici strettamente necessari al corretto funzionamento del sito.</p>
+          <h3>Condivisione dei dati</h3>
+          <p>I dati personali non vengono condivisi con terze parti e non vengono trasferiti al di fuori dell’Unione Europea.</p>
+          <h3>Conservazione dei dati</h3>
+          <p>I dati eventualmente ricevuti tramite email vengono conservati solo per il tempo necessario a gestire la richiesta e non oltre quanto strettamente necessario.</p>
+          <h3>Diritti dell’utente</h3>
+          <ul>
+            <li>Accesso ai propri dati.</li>
+            <li>Rettifica o cancellazione.</li>
+            <li>Limitazione o opposizione al trattamento.</li>
+          </ul>
+          <p>Per esercitare tali diritti è sufficiente contattare il titolare via email.</p>
+          <h3>Contatti</h3>
+          <p>Per informazioni sulla presente informativa o per esercitare i propri diritti: <a href="mailto:marastoni311@gmail.com">marastoni311@gmail.com</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/stars-bg.js"></script>
+    <script src="./scripts.js"></script>

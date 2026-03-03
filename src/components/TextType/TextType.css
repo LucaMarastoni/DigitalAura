@@ -1,0 +1,36 @@
+.text-type {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.text-type__content {
+  display: inline-block;
+}
+
+.text-type__cursor {
+  margin-left: 0.18em;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
+
+.hero-title .text-type-slot {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  min-width: 4.2ch;
+}
+
+.hero-title .text-type-rotator {
+  color: #ffffff;
+  text-shadow: 0 16px 34px rgba(0, 0, 0, 0.45);
+}
+
+.hero-title .text-type-rotator .text-type__cursor {
+  color: rgba(255, 255, 255, 0.85);
+  margin-left: 0.16em;
+}

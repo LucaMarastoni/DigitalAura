@@ -1,0 +1,24 @@
+.decrypted-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.hero-title .text-type-slot {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.hero-title .decrypted-rotator {
+  color: #ffffff;
+  text-shadow: 0 16px 34px rgba(0, 0, 0, 0.45);
+  min-width: 4.2ch;
+}
+
+.hero-title .decrypted-char {
+  color: #ffffff;
+}
+
+.hero-title .decrypted-char--encrypted {
+  color: rgba(255, 255, 255, 0.55);
+}
